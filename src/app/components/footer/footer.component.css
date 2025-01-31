@@ -1,0 +1,45 @@
+/* تحسين شكل الفوتر */
+footer {
+    background-color: #111;
+    color: #bbb;
+    font-size: 1rem;
+}
+
+footer a.text-light:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+footer .logo {
+    border-radius: 50%;
+    border: 2px solid #007bff;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+footer .list-unstyled li i {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+footer hr {
+    border-color: #333;
+    margin: 30px 0;
+}

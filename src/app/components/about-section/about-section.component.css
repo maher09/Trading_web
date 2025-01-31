@@ -1,0 +1,57 @@
+.about-section {
+    background-color: #000000; /* Black background */
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #cccccc; /* Light gray for subtle contrast */
+  }
+  
+  .feature-card {
+    background-color: #1a1a1a; /* Dark gray for cards */
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Light shadow effect */
+  }
+  
+  .card-title {
+    color: #ffffff; /* White text */
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    color: #cccccc; /* Light gray for card text */
+  }
+  
+  .icon {
+    font-size: 3rem;
+    color: #007bff; /* Blue color for icons */
+  }
+  
+  .btn-light {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-light:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,97 @@
+#xm-features-carousel {
+    background-color: #000;
+  
+    color: #fff;
+    padding: 60px 0;
+  }
+  
+  #xm-features-carousel h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  #xm-features-carousel p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 40px;
+  }
+  
+  #xm-features-carousel .carousel-inner {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+  }
+  
+  #xm-features-carousel .carousel-item {
+    padding: 40px 0;
+  }
+  
+  #xm-features-carousel .carousel-item h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  #xm-features-carousel .carousel-item p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  #xm-features-carousel .carousel-control-prev-icon,
+  #xm-features-carousel .carousel-control-next-icon {
+    background-color: #007bff;
+  }
+  
+  #xm-features-carousel .carousel-item .p-4 {
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #xm-features-carousel i {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #xm-features-carousel .carousel-item:hover i {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+  }
+  
+  #xm-features-carousel .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    border-radius: 25px;
+  }
+  
+  #xm-features-carousel .btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Adjusting the padding and alignment of columns */
+  #xm-features-carousel .carousel-item .col-md-3 {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  #xm-features-carousel .carousel-item .col-md-3 .p-4 {
+    max-width: 100%;
+    min-height: 200px;
+  }
+  
+  #xm-features-carousel .carousel-item .col-md-3 .p-4 h4 {
+    font-size: 1.4rem;
+  }
+  
+  #xm-features-carousel .carousel-item .col-md-3 .p-4 p {
+    font-size: 1rem;
+  }
+  

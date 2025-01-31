@@ -1,0 +1,33 @@
+/* تأثير Fade-Up */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s forwards;
+}
+
+.fade-up.delay-200 {
+    animation-delay: 200ms;
+}
+
+.fade-up.delay-300 {
+    animation-delay: 300ms;
+}
+
+.fade-up.delay-400 {
+    animation-delay: 400ms;
+}
+
+.fade-up.delay-500 {
+    animation-delay: 500ms;
+}
+
+.fade-up.delay-600 {
+    animation-delay: 600ms;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

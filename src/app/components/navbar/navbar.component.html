@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow" id="mainNav">
+  <div class="container px-4 px-lg-5">
+    <!-- الشعار -->
+    <a class="navbar-brand d-flex align-items-center" id="logoimg" routerLink="/">
+      <img src="assets/imgs/abusham.jpg" alt="شعار" class="logo me-2" width="50px" height="50px" />
+      <p class="masthead-heading text-uppercase mb-0 mt-2" id="logo">توصيات أبو شهم</p>
+    </a>
+
+    <!-- زر التبديل للجوال -->
+    <button
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="تبديل التنقل"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- الروابط -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" routerLink="/">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/services">الخدمات</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/subscription">الاشتراك</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://web.telegram.org/a/#6621670709">تواصل معنا</a></li>
+      </ul>
+
+      <!-- قسم تسجيل الدخول والتحية -->
+      <div class="d-flex align-items-center ms-auto">
+        <!-- تحية المستخدم -->
+        <div
+          *ngIf="auth.user$ | async as user"
+          class="d-flex align-items-center bg-light rounded-pill shadow-sm py-1 px-2 me-2"
+          style="font-size: 0.8rem;"
+        >
+          <i class="fas fa-user-circle text-primary fs-5 me-1"></i>
+          <span class="text-dark fw-bold">
+            مرحباً، {{ user.name }}
+          </span>
+        </div>
+
+        <!-- زر تسجيل الدخول/الخروج -->
+        <button
+          *ngIf="!(auth.isAuthenticated$ | async); else loggedIn"
+          class="btn btn-primary px-3 py-1 shadow-sm"
+          style="font-size: 0.85rem;"
+          (click)="login()"
+        >
+          تسجيل الدخول
+        </button>
+        <ng-template #loggedIn>
+          <button class="btn btn-danger px-3 py-1 shadow-sm" style="font-size: 0.85rem;" (click)="logout()">
+            تسجيل الخروج
+          </button>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+</nav>

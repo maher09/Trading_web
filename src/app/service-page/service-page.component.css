@@ -1,0 +1,61 @@
+/* إعدادات عامة */
+body {
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  color: #f0f0f0;
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* الحاوية */
+.container {
+  padding: 80px 20px 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* عنوان القسم */
+.section-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  display: block;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* البطاقات */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+  border: 1px solid #007bff;
+}
+
+/* أيقونات الخدمات */
+

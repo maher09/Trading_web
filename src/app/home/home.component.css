@@ -1,0 +1,112 @@
+.btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+  
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+}
+  @media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+  }
+  .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+  }
+  .btn-check + .btn:hover {
+    color: var(--bs-btn-color);
+    background-color: var(--bs-btn-bg);
+    border-color: var(--bs-btn-border-color);
+  }
+  .btn:focus-visible {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+  .btn-check:focus-visible + .btn {
+    border-color: var(--bs-btn-hover-border-color);
+    outline: 0;
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+  .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+  }
+  .btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
+    box-shadow: var(--bs-btn-focus-box-shadow);
+  }
+  .btn:disabled, .btn.disabled, fieldset:disabled .btn {
+    color: var(--bs-btn-disabled-color);
+    pointer-events: none;
+    background-color: var(--bs-btn-disabled-bg);
+    border-color: var(--bs-btn-disabled-border-color);
+    opacity: var(--bs-btn-disabled-opacity);
+  }
+  
+  .btn-primary {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #007bff;
+      --bs-btn-border-color: #007bff;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #558985;
+      --bs-btn-hover-border-color: #50817e;
+      --bs-btn-focus-shadow-rgb: 123, 175, 172;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #50817e;
+      --bs-btn-active-border-color: #4b7976;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #64a19d;
+      --bs-btn-disabled-border-color: #64a19d;
+  }
+  
+
+  .hero .hero-waves {
+    display: block;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+img, svg {
+    vertical-align: middle;
+}
+
+/* تأثير Fade-Up */
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+.fade-up.delay-300 {
+  animation-delay: 300ms;
+}
+
+@keyframes fadeUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* تأثير Zoom-In */
+.zoom-in {
+  transform: scale(0);
+  animation: zoomIn 1s forwards;
+}
+
+.zoom-in.delay-600 {
+  animation-delay: 600ms;
+}
+
+@keyframes zoomIn {
+  to {
+      transform: scale(1);
+  }
+}

@@ -1,0 +1,60 @@
+<main class="flex-shrink-0">
+    <!-- Navigation-->
+    <app-navbar></app-navbar>
+
+    <!-- Header-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase fade-up">ABU SHAHM</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5 fade-up delay-300">
+                        أفضل التوصيات في الشرق الأوسط
+                    </h2>
+
+                    <a *ngIf="!(auth.isAuthenticated$ | async)" 
+                    class="btn btn-primary zoom-in delay-600"  
+                    (click)="login()">
+                    ابدأ الآن
+                 </a>
+                 
+                 <a class="btn btn-secondary zoom-in delay-600 ms-3" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#videoModal">
+                    شاهد الفيديو
+                 </a>
+                 
+                 <!-- Modal -->
+                 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-lg">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="videoModalLabel"> شاهد الفيديو</h5>
+                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+                             </div>
+                             <div class="modal-body">
+                                <video width="100%" height="400" controls>
+                                    <source src="assets/video/website.mp4" type="video/mp4">
+                                    متصفحك لا يدعم عرض الفيديو.
+                                </video>
+                            </div>
+                            
+                         </div>
+                     </div>
+                 </div>
+                 
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features section-->
+    <app-services-section></app-services-section>
+
+    <app-about-section></app-about-section>
+    <app-be-partner></app-be-partner>
+    <app-broker></app-broker>
+</main>
+
+<!-- Footer-->
+<app-footer></app-footer>

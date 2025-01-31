@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sign-in {
+    width: 100%;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+}
+
+.signin-image, .signin-form {
+    flex: 1;
+    padding: 2rem;
+}
+
+.signin-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9fafb;
+}
+
+.signin-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.signup-image-link {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.signup-image-link:hover {
+    text-decoration: underline;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 1.2rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.agree-term {
+    margin-right: 0.5rem;
+}
+
+.label-agree-term {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.form-button {
+    text-align: center;
+}
+
+.form-submit {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form-submit:hover {
+    background: #2980b9;
+}
+
+.social-login {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.social-label {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.socials li {
+    margin: 0 0.5rem;
+}
+
+.socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ddd;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.socials a:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .sign-in {
+        flex-direction: column;
+    }
+}
